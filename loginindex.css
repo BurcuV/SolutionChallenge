@@ -249,6 +249,36 @@ body{
 .body .col3 .sup a {
     color: white;
 }
+.secilenler{
+    width: 600px;
+    height: auto;
+    border: 10px solid white;
+    margin: 200px 0px 0px 50px;
+    background: #BEEB9F;
+    opacity: 0.8;
+    border-radius: 50px 0px;
+}
+.sag p{
+    font-size: 80px;
+    text-align: center;
+   
+    }
+.best {
+    width: 500px;
+    height: 110px;
+    margin: 50px 100px;
+    font-family:sans-serif;
+    
+    
+}
+.best img{
+    float: left;
+    background: black;
+}
+.yazi{
+    float: left;
+    padding:30px 0px 0px 30px ;
+}
 
 
 
