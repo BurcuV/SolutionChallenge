@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+*{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+body{
+    background-image: url('1.png');
+}
+.header{
+    display: grid;
+    grid-template-columns: 10% auto 300px;
+    grid-template-rows: 50px;
+    grid-template-areas: "logo . items";
+    background-color: #0fad33;
+    align-items: center;
+
+    
+}
+.header .h-center form{
+    display: block;
+    margin-top: 20px;
+}
+.header .h-center .search{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: #0fad33;
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}   
+.header .h-center .search::placeholder{
+    text-align: center;
+    color: #0fad33;
+}
+.header .h-center .search:focus{
+    outline: none;
+}
+.header .h-right{
+    display: inline-grid;
+    float: right;
+    grid-area: items;
+    margin-right: 25px;
+}
+
+
+.header .h-right ul{
+    list-style-type: none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.header .h-right ul li{
+    position: relative;
+    font-size: 18pt;
+    float: right;
+    padding-left: 30px;
+}
+.header .h-right ul li:hover{
+    animation: bigger 0.4s ease-in-out;
+    animation-fill-mode:both;
+
+}
+.header .h-right ul li a{
+    color: rgb(255, 255, 255);
+}
+
+
+.header .h-left{
+    font-size: 18pt;
+    grid-area: logo;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    justify-self: center;
+    
+}
+.slide{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: "s-left s-center s-right";
+    margin-top: 50px;
+}
+.slide .s-center{
+    display: grid;
+    background-color: green;
+    color: white;
+    height: 500px;
+}
+.slide .s-center .kampanya{
+    justify-self: center;
+    align-self: center;
+    overflow: scroll;
+
+}
+.slide .s-left, .slide .s-right{
+    height: fit-content;
+    margin: 5px;
+
+}
+.slide .s-left .back:hover, .slide .s-right .next:hover{
+    background-color: white;
+    border: 1px solid #0fad33;
+    color:#0fad33;
+}
+.slide .s-left .back, .slide .s-right .next{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 15pt;
+    cursor: pointer;
+    outline: none;
+    background-color: #0fad33;
+    border-radius: 25px;
+    transition: .4s;
+
+}
+.body{
+    margin: 40px;
+    height: 500px;
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "col1 col2";
+}
+.body .col1, .body .col2{
+    border: 1px solid #0fad33;
+}
+
+.body .col1{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+}
+.body .col1 ul{
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+.body .col1 ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.body .col1 ul li .tablinks{
+    width: 100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    border:1px solid #0fad33;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .4s;
+    outline: none;
+
+}
+.body .col1 ul li .tablinks:hover{
+    background-color: #0fad33;
+    color: white;
+    border: 1px solid white;
+}
+.body .col2{
+    background-color: white;
+    padding: 20px;
+}
+
+.tabcontent{
+        display: none;
+}
+.body .col2 .tabcontent .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(3,200px);
+    grid-gap: 20px;
+    overflow: scroll;
+    padding: 20px;
+}
+.body .col2 .tabcontent .wrapper .card{
+    display: grid;
+    background-color: whitesmoke;
+    grid-template-rows: 150px 50px;
+    grid-template-areas: 
+        "top"
+        "bottom"
+    ;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #0fad33;
+    border-radius: 15px;
+    width: fit-content;
+    transition: .4s ease-in-out;
+}
+.body .col2 .tabcontent .wrapper .card .bottom{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-areas: "b-left b-right";
+    justify-items: center;
+    align-items: center;
+}
+.body .col2 .tabcontent .wrapper .card:hover{
+    transform: scale(1.1);
+}

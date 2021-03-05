@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+*{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    background-image: url('1.png');
+
+}
+.header{
+    display: grid;
+    grid-template-columns: 10% auto 300px;
+    grid-template-rows: 50px;
+    grid-template-areas: "logo . items";
+    background-color: #0fad33;
+    align-items: center;
+
+    
+}
+.header .h-center form{
+    display: block;
+    margin-top: 20px;
+}
+.header .h-center .search{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: #0fad33;
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}   
+.header .h-center .search::placeholder{
+    text-align: center;
+    color: #0fad33;
+}
+.header .h-center .search:focus{
+    outline: none;
+}
+.header .h-right{
+    display: inline-grid;
+    float: right;
+    grid-area: items;
+    margin-right: 25px;
+}
+
+
+.header .h-right ul{
+    list-style-type: none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.header .h-right ul li{
+    position: relative;
+    font-size: 18pt;
+    float: right;
+    padding-left: 30px;
+}
+.header .h-right ul li:hover{
+    animation: bigger 0.4s ease-in-out;
+    animation-fill-mode:both;
+
+}
+.header .h-right ul li a{
+    color: rgb(255, 255, 255);
+}
+
+
+.header .h-left{
+    font-size: 18pt;
+    grid-area: logo;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    justify-self: center;
+    
+}
+
+
+
+.body .col1 .profile{
+    border: 1px #0fad33 solid;
+    margin-top: 50px !important;
+    grid-area: profil;
+    width:100%;
+    height: fit-content;
+    background-color: whitesmoke;
+    display: block;
+    margin-top: 0 !important;
+    margin: 20px;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: auto;
+    
+
+}
+.profile ul{
+    padding-left: 0;
+    text-align: center;
+}
+.profile ul li{
+    text-align: center;
+    display: inline-block;
+}
+.pbilgi a{
+    text-decoration: none;
+    color: black;
+}
+.profile a:hover{
+    color: firebrick;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin: 20px;
+    margin-top: 50px !important;
+    grid-template-areas: "col1 col2";
+    height: 100vh;
+    grid-gap: 10px;
+}
+.body .col2{
+    display:grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+    height: fit-content;
+}
+.body .col2 .tabcontent{
+    border: 1px solid #0fad33;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(autofill,100px);
+    grid-gap: 30px;
+    background-color: whitesmoke;
+}
+.body .col2 .tabcontent .name{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 2%;
+}
+.body .col2 .tabcontent .mail{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: fit-content;
+}
+.body .col2 .tabcontent .foto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 4%;
+    align-items: center;
+}
+
+
+
+
+/* Animasyonlar */
+@keyframes bigger{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}

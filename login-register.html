@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>woofWoof | Kayıt Ol!</title>
+  </head>
+  <body>
+    <!-- background loop -->
+    <video autoplay muted loop id="background">
+      <source src="bg.mp4" type="video/mp4" />
+    </video>
+
+    <!--background loop-->
+    <!--kayıt Kartı-->
+    <div class="card">
+      <!--Welcoming-->
+      <div id="intro">
+        <h1>Merhaba!</h1>
+        <br />
+        <br />
+        <p>
+          Biz de seni bekliyorduk... Ailemizde seni görmekten mutluluk duyarız.
+          Patili dostlarımız için buluştuğumuz bu ortamda
+          <br />
+          Onlara ne kadar çok destekçi bulabilirsek o kadar mutlu oluyorlar.
+          Mutluluk bizler için bir çok anlam ifade etse de onlar, önlerine
+          konulan bir kap mama ve senin gibi güzel kalpli insanların açtığı
+          kucak ile çok mutlu oluyorlar. İstersen çok zaman kaybetmeden hemen
+          kayıt formuna geçelim ve seni bir an önce aramızda görelim. Şimdiden
+          Teşekkür "havlamalarını" duyuyor gibiyiz :D
+        </p>
+        <br />
+        <p>~ WoofWoof Ekibi ~</p>
+        <div class="btn">
+          <a class="sign" href="#" onclick="display()">Kayıt Ol</a>
+          <a class="login" href="#">Giriş Sayfasına Dön</a>
+        </div>
+      </div>
+      <!--Başlık-->
+      <div id="form">
+        <h1 class="register">
+          WoofWoof'A KAYIT OL!
+          <br />
+          <br />
+        </h1>
+        <!--ad soyad-->
+        <div class="row1">
+          <form action="#">
+            <input class="ad" type="text" name="isim" placeholder="İsim" />
+            <input
+              class="soyad"
+              type="text"
+              name="soyisim"
+              placeholder="Soyisim"
+            />
+          </form>
+          <!--email-->
+          <div class="row2">
+            <form action="#">
+              <input
+                class="email"
+                type="text"
+                name="email"
+                placeholder="E-mail"
+              />
+            </form>
+          </div>
+          <!--şifre-->
+          <div class="row3">
+            <form action="#">
+              <input
+                class="sifre"
+                type="password"
+                name="password"
+                placeholder="Şifre"
+              />
+              <input
+                class="sifre-onay"
+                type="password"
+                name="sifre-onay"
+                placeholder="Şifre(Tekrar)"
+              />
+            </form>
+          </div>
+          <!--Doğum Tarihi-->
+          <div class="row4">
+            <form action="#">
+              <input class="dg" type="date" name="dg" />
+            </form>
+          </div>
+          <!--butonlar-->
+          <div class="btn">
+            <a class="sign" href="#">KAYIT OL</a>
+            <a class="login" href="#">GİRİŞ SAYFASINA DÖN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--script-->
+    <script>
+            var x = document.getElementById('intro');
+            var y = document.getElementById('form');
+            function display(){
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+    </script>
+  </body>
+</html>
