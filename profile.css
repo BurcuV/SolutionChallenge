@@ -87,19 +87,23 @@ body{
     margin-top: 50px;
     grid-template-areas: "col1 col2";
     height: 100vh;
+    grid-column-gap: 20px;
+    
 }
 
+.body .col1 , .body .col2{
+    border: 1px solid black;
+}
 .body .col1 .profile{
     border: 1px #0fad33 solid;
     margin-top: 50px !important;
     grid-area: profil;
-    margin-right: 20px;
-    width: 80%;
-    height: 300px;
+    width: 100%;
+    height: fit-content;
     background-color: whitesmoke;
-    display: block;
+    display: grid;
+    justify-items: center;
     margin-top: 0 !important;
-    margin: 20px;
     border-radius: 15px;
     padding-top: 30px;
     padding-bottom: auto;
@@ -122,28 +126,18 @@ body{
     padding: 20px;
     border: 1px solid #0fad33;
 }
-.body .col2 .content{
+.body .col2 .tabcontent{
+    display: none;
+}
+
+.body .col2 .tabcontent .wrapper{
     display: grid;
-    grid-template-columns: 15% 85%;
-    height: 100px;
-    grid-template-areas: "c-left c-right";
+    grid-template-rows: repeat(5,80px);
+    align-items: center;
+    grid-gap: 30px;
+}
+.body .col2 .tabcontent .wrapper .input{
     padding: 10px;
-    background-color: whitesmoke;
-    border-radius: 15px;
-    border: 1px solid #0fad33;
-    margin-bottom: 10px;
-}
-.body .col2 .content:hover{
-    background-color: rgb(230, 230, 230);
-}
-.body .col2 .content .c-left{
-    justify-self: center;
-    align-self: center;
-    margin: 10px;
-}
-.body .col2 .content .c-right{
-    justify-self: center;
-    align-self: center;
 }
 
 
