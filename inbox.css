@@ -1,0 +1,81 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.header{
+    width: 80%;
+    height: 50px;
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 70% 5% 5%;
+    
+    grid-template-rows: 50px;
+    grid-template-areas: "horta . hrightone  . hrightwo";
+    align-items: center;
+    margin: 0px 0px 0px 170px;
+
+   
+}
+.horta{
+    display: grid;
+    justify-self: center;
+    border: 1px solid black;
+}
+.hrightone{
+    display: grid;
+    justify-self: right;
+    border: 1px solid black;
+   
+
+
+}
+.hrightwo{
+    display: grid;
+    justify-self: right;
+    padding: 2px 40px 2px 0px;
+    border: 1px solid black;
+}
+.bkutu{
+    
+    display: grid;
+    width: 80%;
+    height:100%;
+    background: whitesmoke;
+    margin: 0px 0px 0px 170px;
+    align-items: center;
+    border-top: 1px solid black;
+    grid-template-areas: "contentone"
+    "contentwo"
+    "contenthree";
+    grid-template-columns:100%;
+    grid-template-rows: 80px;
+
+}
+.contentone  {
+    display: grid;
+     border: 1px solid black;
+     padding: 20px 20px;
+     background-color: darkgoldenrod;
+    
+}
+.contentwo{
+    display: grid;
+     border: 1px solid black;
+     padding: 20px 20px;
+     background-color: darkgoldenrod;
+     margin: 20px 0px 20px 0px;
+
+}
+ .contenthree{
+     display: grid;
+     border: 1px solid black;
+     padding: 20px 20px;
+     background-color: darkgoldenrod;
+ }
