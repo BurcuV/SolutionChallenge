@@ -34,24 +34,54 @@
                         <li class="isim"><span class="ico"><i class="fas fa-signature"></i></span>: Uğurcan KUZU</li><br><br>
                         <li class="il"><span class="ico"><i class="fas fa-city"></i></span>: İzmir/Türkiye</li><br><br>
                         <li class="rütbe"><span><i class="fas fa-medal"></i></span>: Bağrına Basan</li><br><br>
+                        
+                        <button class="tablinks" onclick="openTab(event,'Kullanıcı Bilgileri')">Kullanıcı Bilgileri</button><br><br>
+                        <button class="tablinks" onclick="openTab(event,'Ödeme Bilgileri')">Ödeme Bilgileri</button>
                     </ul>
                 </div>
             </div>
             <div class="col2" style="grid-area: col2;">
-                <h1 style="margin:10px; color: black;">PROFIL AKIŞI</h1>
-                <div class="content">
-                    <div class="c-left"><i class="fas fa-shopping-basket"></i></div>
-                    <div class="c-right">Tebrikler! 3 Adet Whiskas Kedi Mamanız "Bornova Sevimli Patiler" Barınağına Yola Çıktı.</div>
+                <div id="Kullanıcı Bilgileri"class="tabcontent" style="display: grid;">
+                    <h1>KULLANICI BİLGİLERİ</h1>
+                    <div class="wrapper">
+                        <div class="name" style="display: grid; grid-template-columns: repeat(2,50%); grid-gap: 10px;">
+                            <input type="text" class="input" placeholder="AD" style="width: 100%;">
+                            <input type="text" class="input" placeholder="SOYAD" style="width: 98%;">
+                        </div>
+                        <div class="email">
+                            <input type="text" class="input" placeholder="E-MAİL" style="width: 100%;">
+                        </div>
+                        <div class="foto" style="display: grid; grid-template-columns: repeat(2,50%);align-items: center;">
+                            <button class="btn" style="width: 50%;">Fotoğraf Yükle</button>
+                            <p>*Yükleyeceğiniz Fotoğraf Max 100x100 boyutunda olmalıdır <br><br>*10MB Boyutunu Geçmemelidir.</p>
+                        </div>
+                        <div class="tel">
+                            <input type="text" class="input" placeholder="TELEFON NO" style="width: 100%;">
+                        </div>
+                        <div class="save" style="display: grid;">
+                            <button style="justify-self:end">Değişiklikleri Kaydet</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="content">
-                    <div class="c-left"><i class="fas fa-medal"></i></div>
-                    <div class="c-right">Görüyoruz ki "Bağrına Basan" rütbesine ulaştınız. WoofWoof ekibi olarak sizi tebrik ederiz! (Ve evet. Daha önce yardım eli uzattığınız dostlarımız da sizi kutluyor!)</div>
-                </div>
-                <div class="content">
-                    <div class="c-left"><i class="fas fa-percent"></i></div>
-                    <div class="c-right">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada bazı dostlarımız da aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz! </div>
+                <div id="Ödeme Bilgileri" class="tabcontent">
+                    <h1>Ödeme Bilgileri</h1>
                 </div>
             </div>
-        </div>    
+        </div>
+        <script>
+            function openTab(evt,tabname) {
+                var i,tabcontent,tablinks;
+                tabcontent = document.getElementsByClassName('tabcontent');
+                for(i = 0; i<tabcontent.length;i++){
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName('tablinks');
+                for(i = 0; i<tablinks.length;i++){
+                    tablinks[i].className.replace(" active","");
+                }
+                document.getElementById(tabname).style.display = "grid";
+                evt.currentTarget.className += " active";
+            }
+        </script>    
     </body>
 </html>
