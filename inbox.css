@@ -14,12 +14,12 @@ body{
     height: 50px;
     background: whitesmoke;
     display: grid;
-    grid-template-columns: 70% 5% 5%;
-    
+    grid-template-columns: 70% 15% 15%;
     grid-template-rows: 50px;
-    grid-template-areas: "horta . hrightone  . hrightwo";
+    grid-template-areas: "horta hrightone  hrightwo";
     align-items: center;
     margin: 0px 0px 0px 170px;
+    background: whitesmoke;
 
    
 }
@@ -45,7 +45,7 @@ body{
 .bkutu{
     
     display: grid;
-    width: 80%;
+    width: 78.5%;
     height:100%;
     background: whitesmoke;
     margin: 0px 0px 0px 170px;
@@ -53,29 +53,23 @@ body{
     border-top: 1px solid black;
     grid-template-areas: "contentone"
     "contentwo"
-    "contenthree";
+    "contenthree"
+    "contentfour"
+    "contentfive"
+    "contentsix"
+    "contentseven";
     grid-template-columns:100%;
-    grid-template-rows: 80px;
+    grid-template-rows: repeat(autofill,80px);
+    grid-gap: 10px;
+    padding: 10px 10px;
 
 }
-.contentone  {
+.contentone , .contentwo , .contenthree , .contentfour , .contentfive , .contentsix , .contentseven{
     display: grid;
      border: 1px solid black;
      padding: 20px 20px;
      background-color: darkgoldenrod;
-    
+   
+     
+     
 }
-.contentwo{
-    display: grid;
-     border: 1px solid black;
-     padding: 20px 20px;
-     background-color: darkgoldenrod;
-     margin: 20px 0px 20px 0px;
-
-}
- .contenthree{
-     display: grid;
-     border: 1px solid black;
-     padding: 20px 20px;
-     background-color: darkgoldenrod;
- }
