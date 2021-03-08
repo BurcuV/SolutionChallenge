@@ -59,12 +59,46 @@
                             <input type="text" class="input" placeholder="TELEFON NO" style="width: 100%;">
                         </div>
                         <div class="save" style="display: grid;">
-                            <button style="justify-self:end">Değişiklikleri Kaydet</button>
+                            <button class="btn" style="justify-self:end">Değişiklikleri Kaydet</button>
                         </div>
                     </div>
                 </div>
                 <div id="Ödeme Bilgileri" class="tabcontent">
                     <h1>Ödeme Bilgileri</h1>
+                    <div class="wrapper2">
+                        <div class="saved">
+                            <h2>Kayıtlı Kartlarım ve Adreslerim</h2>
+                            <select class="input"name="cards" style="width: 50%; padding: 10px;">
+                                <option value="Mastercard **52">Mastercard **52</option>
+                                <option value="Visa **39">VISA **39</option>
+                            </select>
+                            <select name="adres" class="input" style="width: 25%; padding: 10px;">
+                                <option value="Ev1">Ev 1</option>
+                                <option value="Ev2">Ev 2</option>
+                                <option value="İş">İş</option>
+                            </select><br>
+                        </div>
+                        <div class="adress">
+                            <h2>Adres Bilgileri</h2>
+                            <div class="adres">
+                                <input type="text" class="input" placeholder="Adres 1">
+                                <input type="text" class="input" placeholder="Adres 2">
+                                <input type="text" class="input" placeholder="Semt">
+                                <input type="text" class="input" placeholder="Şehir">
+                            </div><br>
+                            <button class="btn" style="float: right;">Adresi Kaydet</button>
+                        </div>
+                        <div class="new">
+                            <h2>Yeni Kart Ekle</h2>
+                            <input type="text" class="input" placeholder="AD-SOYAD" style="width: 49%; justify-self: left;">
+                            <input type="text" class="input" placeholder="KART NUMARASI" style="width: 49%; justify-self: right;"><br><br>
+                            <textarea name="ay" class="input" cols="2" rows="1" placeholder="Ay"></textarea>
+                            <textarea name="yıl" class="input" cols="4" rows="1" placeholder="Yıl"></textarea><br>
+                            <button class="btn" style="float: right;">Kart Bilgilerimi Kaydet</button>
+                        </div>
+
+                        
+                    </div>
                 </div>
             </div>
         </div>
