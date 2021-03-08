@@ -178,6 +178,7 @@ body{
 .body .col2{
     background-color: white;
     padding: 20px;
+    width: fit-content;
 }
 .tabcontent{
         display: none;
