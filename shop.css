@@ -183,6 +183,7 @@ body{
 
 .tabcontent{
         display: none;
+        width: fit-content;
 }
 .body .col2 .tabcontent .wrapper{
     display: grid;
