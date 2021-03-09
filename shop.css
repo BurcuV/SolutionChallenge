@@ -180,6 +180,7 @@ body{
     padding: 20px;
     width: fit-content;
 }
+
 .tabcontent{
         display: none;
 }
@@ -215,4 +216,17 @@ body{
 }
 .body .col2 .tabcontent .wrapper .card:hover{
     transform: scale(1.1);
+}
+.body .col2 .tabcontent .wrapper .total .tablinks:hover{
+    background-color: #0fad33;
+    color: white;
+    border: 1px solid white;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
 }
