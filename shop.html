@@ -157,7 +157,59 @@
 
                     </div>
                 </div>
-                
+                <div id="Sepetim" class="tabcontent">
+                    <h1>Sepetim</h1>
+                    <div class="wrapper">
+                        <div class="card">
+                            <div class="top">XX</div>
+                            <div class="bottom">
+                                <div class="b-left"><i class="fas fa-shopping-cart" style="color: #0fad33; cursor: pointer;"></i></div>
+                                <div class="b-right">8.00TL</div>
+                            </div>    
+                        </div>
+                        <div class="card">
+                            <div class="top">XX</div>
+                            <div class="bottom">
+                                <div class="b-left"><i class="fas fa-shopping-cart" style="color: #0fad33; cursor: pointer;"></i></div>
+                                <div class="b-right">10.00TL</div>
+                            </div>    
+                        </div>
+                        <div class="total" style="border-radius:15px;padding:10px;grid-column:3; grid-row: 1 / 3 ;display: grid; justify-items: center;background-color: whitesmoke; border: 1px solid #0fad33;grid-template-rows:50px auto 50px;">
+                            <h1>Sepet</h1>
+                            <table style="text-align: center;">
+                                <tr>
+                                    <th style="border-bottom:1px solid #0fad33 ;">Ürün Adı</th>
+                                    <th style="border-bottom:1px solid #0fad33;">Miktar</th>
+                                    <th style="border-bottom: 1px solid #0fad33;">Fiyat</th>
+                                </tr>
+                                <tr>
+                                    <td>XX</td>
+                                    <td>1 Adet</td>
+                                    <td>8.00TL</td>
+                                </tr>
+                                <tr>
+                                    <td>XX</td>
+                                    <td>1 Adet</td>
+                                    <td>10.00TL</td>
+                                </tr>
+
+                            </table>
+                            <button onclick="paid(event,'paidwrapper')" style="background-color: white; border: 1px solid #0fad33; border-radius: 5px; color:#0fad33; outline: none; cursor: pointer;" class="tablinks">Ödeme Yap</button>
+                        </div>
+
+                    </div>
+                    <div id="paidwrapper" style="width:75vw;justify-items: center; align-items: center; display: none;">
+                        <br>
+                        <br>
+                        <br>
+                        <div style="text-align: center; animation: fade 1s ease-in-out;">
+                            <i style="color:#0fad33;font-size: 36pt;" class="fas fa-check-circle"></i>
+                            <h1>Siparişiniz Başarıyla Alınmıştır...</h1>
+                        </div>
+                    </div>
+
+
+                </div>
 
 
             </div>
@@ -166,6 +218,17 @@
         </div>
     </div>
     <script>
+        function paid(evt,wrapperName) {
+            var i,wrapper,paidwrapper;
+            wrapper = document.getElementsByClassName('wrapper');
+            paidwrapper = document.getElementById('paidwrapper');
+
+            for(i = 0; i<wrapper.length;i++){
+                wrapper[i].style.display = "none";
+            }
+            paidwrapper.style.display = "grid";
+
+        }
         function openItem(evt, itemName) {
             var i, tabcontent, tablinks;
 
