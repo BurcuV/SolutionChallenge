@@ -32,14 +32,22 @@ body{
 .hrightone {
     display: grid;
     justify-self: right;
-    border: 1px solid black;
+    color: black;
+    grid-template-areas: "button";
+    grid-gap: 10px;
+    margin-right: 20px;
+    text-decoration: none;
 }
+
+
+
 .hrightwo , .hrightwo a {
     display: grid;
     justify-self: right;
     padding: 2px 40px 2px 0px;
     color: black;
     text-decoration: none;
+
 }
 .hrightwo a:hover{
     color:goldenrod;
@@ -60,19 +68,56 @@ body{
     "contentfour"
     "contentfive"
     "contentsix"
-    "contentseven";
+    "contentsvn";
     grid-template-columns:100%;
     grid-template-rows: repeat(autofill,80px);
     grid-gap: 10px;
     padding: 10px 10px;
 
 }
-.contentone , .contentwo , .contenthree , .contentfour , .contentfive , .contentsix , .contentseven{
+.contentone , .contentwo , .contenthree , .contentfour , .contentfive , .contentsix , .contentsvn{
     display: grid;
      border: 1px solid black;
      padding: 20px 20px;
      background-color: darkgoldenrod;
-     grid-template-areas: ; 
+     
 
 }
+.contentone{
+    
+    grid-template-areas: "coneleft coneright" ;
+    grid-template-columns: 3% 97%;
+}
+.contentwo{
+  
+    grid-template-areas: "ctwoleft ctworight" ;
+    grid-template-columns: 3% 97%;
+}
 
+.contenthree{
+   
+    grid-template-areas: "cthreeleft cthreeright" ;
+    grid-template-columns: 3% 97%;
+}
+
+.contentfour{
+    
+    grid-template-areas: "cfourleft cfouright" ;
+    grid-template-columns: 3% 97%;
+}
+
+.contentfive{
+    
+    grid-template-areas: "cfiveleft cfiveright" ;
+    grid-template-columns: 3% 97%;
+}
+.contentsix{
+    
+    grid-template-areas: "csixleft csixright" ;
+    grid-template-columns: 3% 97%;
+}
+.contentsvn{
+    
+    grid-template-areas: "csvnleft csvnright" ;
+    grid-template-columns: 3% 97%;
+}
