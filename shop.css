@@ -145,6 +145,8 @@ body{
     overflow: hidden;
     width: 100%;
     height: fit-content;
+    margin-left: 10px;
+    
 }
 .body .col1 ul{
     justify-self: center;
@@ -156,7 +158,7 @@ body{
     margin: 0;
     padding: 10px;
 }
-.body .col1 ul li .tablinks{
+ .tablinks{
     width: 100%;
     margin: 0;
     left: 0;
@@ -164,13 +166,13 @@ body{
     padding: 20px;
     background-color: white;
     border:1px solid #0fad33;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     transition: .4s;
     outline: none;
 
 }
-.body .col1 ul li .tablinks:hover{
+.tablinks:hover{
     background-color: #0fad33;
     color: white;
     border: 1px solid white;
@@ -178,7 +180,8 @@ body{
 .body .col2{
     background-color: white;
     padding: 20px;
-    width: fit-content;
+    width: 90%;
+    margin-left: 30px;
 }
 
 .tabcontent{
@@ -187,7 +190,7 @@ body{
 }
 .body .col2 .tabcontent .wrapper{
     display: grid;
-    grid-template-columns: repeat(3,200px);
+    grid-template-columns: repeat(4,200px);
     grid-template-rows: repeat(3,200px);
     grid-gap: 20px;
     overflow: scroll;

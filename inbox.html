@@ -6,35 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inbox.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <title>Bildirimler</title>
 
 </head>
 
 <body background="1.png">
     <header class="header" style="grid-area: header;">
-        <div class="horta" style="grid-area: horta;"> <strong>Bildirimler</strong></div>
-        <div class="hrightone" style="grid-area: hrightone;">
-            <button id="button" style="grid-area: button;" onclick="tumunuSec()"> Tümünü seç</button>
+        <img src="resimler/logo.png" class="logo" style="grid-area: logo; height: 50px;">
+        <div class="hleft" style="grid-area: hleft;">
+            <input type="button" id="button" style="grid-area: button;" onclick="tumunuSec()" value="Tümünü Seç">
+            <a href="" style="text-decoration: none; color: white;" onclick="burcu(event)">
+                <div class=" hleftwo" style="grid-area: hleftwo;"> Sil </div>
+            </a>
         </div>
-        <div class=" hrightwo" style="grid-area: hrightwo;"> <a href="">Sil</a>
+        <div class="hright" style="grid-area: hright;">
+            <a href="#" class="icon" style="grid-area: hana;"><i class="fas fa-inbox"></i></a>
+            <a href="shop.html" class="icon" style="grid-area: hshop;"><i class="fas fa-shopping-cart"></i></a>
+            <a href="profile.html" class="icon" style="grid-area: hprofil;"><i class="fas fa-user-circle"></i></a>
+            <a href="loginindex.html" class="icon" style="grid-area: hlogin;"><i class="fas fa-newspaper"></i></a>
         </div>
+
+
     </header>
 
     <div class="bkutu" style="grid-area: bkutu;">
 
-        <div class="contentone" style="grid-area: contentone;">
+        <div class="contentone" name="b" style="grid-area: contentone;">
             <input type="checkbox" class="checkbox" style="grid-area:coneleft;">
             <div style="grid-area: coneright;">Tebrikler! 3 Adet Whiskas Kedi Mamanız "Bornova Sevimli Patiler"
                 Barınağından yola çıktı</div>
         </div>
 
-        <div class="contentwo" style="grid-area: contentwo;">
+        <div class="contentwo" name="b" style="grid-area: contentwo;">
             <input type="checkbox" class="checkbox" style="grid-area:ctwoleft;">
             <div style="grid-area: ctworight;">"Bağrına Basan" rütbesine ulaştınız. WoofWoof ekibi olarak sizi tebrik
                 ederiz! (Ve evet. Daha önce yardım eli uzattığınız dostlarımız da sizi kutluyor! </div>
         </div>
 
-        <div class="contenthree" style="grid-area: contenthree;">
+        <div class="contenthree" name="b" style="grid-area: contenthree;">
             <input type="checkbox" class="checkbox" style="grid-area:cthreeleft;">
             <div style="grid-area: cthreeright;">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada bazı
                 dostlarımız da aç
@@ -42,7 +53,7 @@
             </div>
         </div>
 
-        <div class="contentfour" style=" grid-area: contentfour;">
+        <div class="contentfour" name="b" style=" grid-area: contentfour;">
             <input type="checkbox" class="checkbox" style="grid-area:cfourleft;">
             <div style="grid-area: cfouright;"> Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada bazı
                 dostlarımız
@@ -50,7 +61,7 @@
             </div>
         </div>
 
-        <div class="contentfive" style=" grid-area: contentfive;">
+        <div class="contentfive" name="b" style=" grid-area: contentfive;">
             <input type="checkbox" class="checkbox" style="grid-area:cfiveleft;">
             <div style="grid-area: cfiveright;"> Pati-Shop'da %25'e varan indirimler seni
                 bekliyor. Bu arada bazı dostlarımızda aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan
@@ -58,7 +69,7 @@
             </div>
         </div>
 
-        <div class="contentsix" style=" grid-area: contentsix;">
+        <div class="contentsix" name="b" style=" grid-area: contentsix;">
             <input type="checkbox" class="checkbox" style="grid-area:csixleft;">
             <div style="grid-area: csixright;">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada
                 bazı dostlarımızda
@@ -66,7 +77,7 @@
             </div>
         </div>
 
-        <div class="contentsvn" style=" grid-area: contentsvn;">
+        <div class="contentsvn" name="b" style=" grid-area: contentsvn;">
             <input type="checkbox" class="checkbox" style="grid-area:csvnleft;">
             <div style="grid-area: csvnright;"> Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu
                 arada bazı dostlarımız da aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz!
