@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 
 <head>
@@ -110,3 +111,126 @@
                         </div>
                     </div>
                 -->
+=======
+<html>
+    <head>
+        <title>WoofWoof | Profil</title>
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="stylesheet" href="profile.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="h-left"><img src="logo.png" style="height: 50px; margin-left: 10px;"></div>
+            <div class="h-center">
+                <form action="#">
+                    <input type="text" name="search" class="search" placeholder="Ara...">
+                </form>
+                
+            </div>
+            <div class="h-right">
+                <ul>
+                    <li><a href="#"><i class="fas fa-inbox"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="profile.html"><i class="fas fa-user-circle"></i></a></li>
+                    <li><a href="loginindex.html"><i class="fas fa-newspaper"></i></a></li>
+                </u>
+            </div>
+        </div>    
+        <div class="body">
+            <div class="col1" style="grid-area: col1;">
+                <div class="profile">
+                    <ul>
+                        <li class="profil"><i class="fas fa-user-circle" style="font-size: 50pt;"></i></li>
+                        <br><br>
+                        <hr style="margin-left: 15px; margin-right: 15px;">
+                        <br>
+                        <li class="isim"><span class="ico"><i class="fas fa-signature"></i></span>: Uğurcan KUZU</li><br><br>
+                        <li class="il"><span class="ico"><i class="fas fa-city"></i></span>: İzmir/Türkiye</li><br><br>
+                        <li class="rütbe"><span><i class="fas fa-medal"></i></span>: Bağrına Basan</li><br><br>
+                        
+                        <button class="tablinks" onclick="openTab(event,'Kullanıcı Bilgileri')">Kullanıcı Bilgileri</button><br><br>
+                        <button class="tablinks" onclick="openTab(event,'Ödeme Bilgileri')">Ödeme Bilgileri</button>
+                    </ul>
+                </div>
+            </div>
+            <div class="col2" style="grid-area: col2;">
+                <div id="Kullanıcı Bilgileri"class="tabcontent" style="display: grid;">
+                    <h1>KULLANICI BİLGİLERİ</h1>
+                    <div class="wrapper">
+                        <div class="name" style="display: grid; grid-template-columns: repeat(2,50%); grid-gap: 10px;">
+                            <input type="text" class="input" placeholder="AD" style="width: 100%;">
+                            <input type="text" class="input" placeholder="SOYAD" style="width: 98%;">
+                        </div>
+                        <div class="email">
+                            <input type="text" class="input" placeholder="E-MAİL" style="width: 100%;">
+                        </div>
+                        <div class="foto" style="display: grid; grid-template-columns: repeat(2,50%);align-items: center;">
+                            <button class="btn" style="width: 50%;">Fotoğraf Yükle</button>
+                            <p>*Yükleyeceğiniz Fotoğraf Max 100x100 boyutunda olmalıdır <br><br>*10MB Boyutunu Geçmemelidir.</p>
+                        </div>
+                        <div class="tel">
+                            <input type="text" class="input" placeholder="TELEFON NO" style="width: 100%;">
+                        </div>
+                        <div class="save" style="display: grid;">
+                            <button class="btn" style="justify-self:end">Değişiklikleri Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="Ödeme Bilgileri" class="tabcontent">
+                    <h1>Ödeme Bilgileri</h1>
+                    <div class="wrapper2">
+                        <div class="saved">
+                            <h2>Kayıtlı Kartlarım ve Adreslerim</h2>
+                            <select class="input"name="cards" style="width: 50%; padding: 10px;">
+                                <option value="Mastercard **52">Mastercard **52</option>
+                                <option value="Visa **39">VISA **39</option>
+                            </select>
+                            <select name="adres" class="input" style="width: 25%; padding: 10px;">
+                                <option value="Ev1">Ev 1</option>
+                                <option value="Ev2">Ev 2</option>
+                                <option value="İş">İş</option>
+                            </select><br>
+                        </div>
+                        <div class="adress">
+                            <h2>Adres Bilgileri</h2>
+                            <div class="adres">
+                                <input type="text" class="input" placeholder="Adres 1">
+                                <input type="text" class="input" placeholder="Adres 2">
+                                <input type="text" class="input" placeholder="Semt">
+                                <input type="text" class="input" placeholder="Şehir">
+                            </div><br>
+                            <button class="btn" style="float: right;">Adresi Kaydet</button>
+                        </div>
+                        <div class="new">
+                            <h2>Yeni Kart Ekle</h2>
+                            <input type="text" class="input" placeholder="AD-SOYAD" style="width: 49%; justify-self: left;">
+                            <input type="text" class="input" placeholder="KART NUMARASI" style="width: 49%; justify-self: right;"><br><br>
+                            <textarea name="ay" class="input" cols="2" rows="1" placeholder="Ay"></textarea>
+                            <textarea name="yıl" class="input" cols="4" rows="1" placeholder="Yıl"></textarea><br>
+                            <button class="btn" style="float: right;">Kart Bilgilerimi Kaydet</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function openTab(evt,tabname) {
+                var i,tabcontent,tablinks;
+                tabcontent = document.getElementsByClassName('tabcontent');
+                for(i = 0; i<tabcontent.length;i++){
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName('tablinks');
+                for(i = 0; i<tablinks.length;i++){
+                    tablinks[i].className.replace(" active","");
+                }
+                document.getElementById(tabname).style.display = "grid";
+                evt.currentTarget.className += " active";
+            }
+        </script>    
+    </body>
+</html>
+>>>>>>> 3e0f2c1ef026b307e0a66ad08b406b88c11b2a0f

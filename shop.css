@@ -164,6 +164,7 @@ body{
     padding: 20px;
     background-color: white;
     border:1px solid #0fad33;
+    border-radius: 15px;
     cursor: pointer;
     transition: .4s;
     outline: none;
@@ -177,9 +178,12 @@ body{
 .body .col2{
     background-color: white;
     padding: 20px;
+    width: fit-content;
 }
+
 .tabcontent{
         display: none;
+        width: fit-content;
 }
 .body .col2 .tabcontent .wrapper{
     display: grid;
@@ -187,6 +191,7 @@ body{
     grid-template-rows: repeat(3,200px);
     grid-gap: 20px;
     overflow: scroll;
+    padding: 20px;
 }
 .body .col2 .tabcontent .wrapper .card{
     display: grid;
@@ -201,6 +206,7 @@ body{
     border: 1px solid #0fad33;
     border-radius: 15px;
     width: fit-content;
+    transition: .4s ease-in-out;
 }
 .body .col2 .tabcontent .wrapper .card .bottom{
     display: grid;
@@ -208,4 +214,20 @@ body{
     grid-template-areas: "b-left b-right";
     justify-items: center;
     align-items: center;
+}
+.body .col2 .tabcontent .wrapper .card:hover{
+    transform: scale(1.1);
+}
+.body .col2 .tabcontent .wrapper .total .tablinks:hover{
+    background-color: #0fad33;
+    color: white;
+    border: 1px solid white;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
 }
