@@ -1,0 +1,123 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.header{
+    width: 80%;
+    height: 50px;
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 70% 20% 10%;
+    grid-template-rows: 50px;
+    grid-template-areas: "horta hrightone  hrightwo";
+    align-items: center;
+    margin: 0px 0px 0px 170px;
+    background: whitesmoke;
+
+   
+}
+.horta{
+    display: grid;
+    justify-self: center;
+    border: 1px solid black;
+}
+
+.hrightone {
+    display: grid;
+    justify-self: right;
+    color: black;
+    grid-template-areas: "button";
+    grid-gap: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
+
+.hrightwo , .hrightwo a {
+    display: grid;
+    justify-self: right;
+    padding: 2px 40px 2px 0px;
+    color: black;
+    text-decoration: none;
+
+}
+.hrightwo a:hover{
+    color:goldenrod;
+}
+
+.bkutu{
+    
+    display: grid;
+    width: 78.5%;
+    height:100%;
+    background: whitesmoke;
+    margin: 0px 0px 0px 170px;
+    align-items: center;
+    border-top: 1px solid black;
+    grid-template-areas: "contentone"
+    "contentwo"
+    "contenthree"
+    "contentfour"
+    "contentfive"
+    "contentsix"
+    "contentsvn";
+    grid-template-columns:100%;
+    grid-template-rows: repeat(autofill,80px);
+    grid-gap: 10px;
+    padding: 10px 10px;
+
+}
+.contentone , .contentwo , .contenthree , .contentfour , .contentfive , .contentsix , .contentsvn{
+    display: grid;
+     border: 1px solid black;
+     padding: 20px 20px;
+     background-color: darkgoldenrod;
+     
+
+}
+.contentone{
+    
+    grid-template-areas: "coneleft coneright" ;
+    grid-template-columns: 3% 97%;
+}
+.contentwo{
+  
+    grid-template-areas: "ctwoleft ctworight" ;
+    grid-template-columns: 3% 97%;
+}
+
+.contenthree{
+   
+    grid-template-areas: "cthreeleft cthreeright" ;
+    grid-template-columns: 3% 97%;
+}
+
+.contentfour{
+    
+    grid-template-areas: "cfourleft cfouright" ;
+    grid-template-columns: 3% 97%;
+}
+
+.contentfive{
+    
+    grid-template-areas: "cfiveleft cfiveright" ;
+    grid-template-columns: 3% 97%;
+}
+.contentsix{
+    
+    grid-template-areas: "csixleft csixright" ;
+    grid-template-columns: 3% 97%;
+}
+.contentsvn{
+    
+    grid-template-areas: "csvnleft csvnright" ;
+    grid-template-columns: 3% 97%;
+}
