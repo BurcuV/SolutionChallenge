@@ -41,23 +41,25 @@ video{
 input{
       border: none;
        border-radius: 4px;
-       height: 15px;
+       height: 25px;
        outline-color: #104d05;}
 
 .yazi:focus{
  box-sizing: border-box;
 }
-button{
+button , button a{
 border-radius: 5px 5px;
+text-decoration: none;
+color: black;
 }
-#login:hover{
-  color: green;
-  
+#login a:hover{
+  color: #80b07e;
 }
-#btn-forgot:hover{
-color:#af0a0a;
 
+#btn-forgot a:hover{
+  color: #cae64d;
 }
-#kayıtol:hover{
-color:#dfdf53;
+
+#kayıtol a:hover{
+  color: #932b2b;
 }
