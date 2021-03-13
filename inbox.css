@@ -76,8 +76,9 @@ body{
 .hright  {
     display: grid;
     grid-template-columns: repeat(4,50px);
-    grid-template-areas: "hana hshop hprofil hlogin";
+    grid-template-areas: "hana hprofil hshop hlogin";
     grid-template-rows: 50px;
+    font-size: 18pt;
     align-items: center;
     justify-self: end;
     
