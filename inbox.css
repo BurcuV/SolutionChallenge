@@ -62,13 +62,9 @@ body{
     align-items: center;
     transition: .4s ease-in-out;
     border-left: none;
+    background-color: #0fad33;
 }
 
-.hleftwo a{
-    text-decoration: none;
-    color: white;
-
-}
 .hleftwo:hover{
     color: green;
      background: white;
