@@ -73,7 +73,7 @@ body{
 .header .h-left{
     font-size: 18pt;
     grid-area: logo;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
     align-self: center;
     justify-self: center;
     
@@ -98,7 +98,7 @@ body{
     grid-area: profil;
     width: 100%;
     height: fit-content;
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.93);
     display: grid;
     justify-items: center;
     margin-top: 0 !important;
@@ -117,7 +117,7 @@ body{
     display: inline-block;
 }
 .body .col2{
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.93);
     display: grid;
     grid-template-columns: repeat(autofill, 100%);
     height: fit-content;
@@ -155,7 +155,7 @@ body{
 .input{
     border-radius: 15px;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.93);
     border: 1px solid #0fad33;
     outline: none;
 }
@@ -170,7 +170,7 @@ body{
 
 .btn{
     padding: 15px;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.7);
     border: 1px solid #0fad33;
     border-radius: 15px;
     color: #0fad33;
