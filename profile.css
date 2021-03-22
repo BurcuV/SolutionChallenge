@@ -90,7 +90,10 @@ body{
     grid-column-gap: 20px;
     
 }
+.body .col1 .profile, .body .col2{
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+}
 
 .body .col1 .profile{
     border: 1px #0fad33 solid;
@@ -180,6 +183,7 @@ body{
     border: 1px solid white;
     background-color: #0fad33;
     color: white;
+    cursor: pointer;
 }
 .tablinks{
     width: 100%;
@@ -194,6 +198,7 @@ body{
 .tablinks:hover{
     background-color: #0fad33;
     color: white;
+    cursor: pointer;
 
 }
 /* Animasyonlar */
