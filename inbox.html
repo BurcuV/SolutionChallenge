@@ -12,12 +12,13 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+
             $(".hleftwo").click(function () {
-                $("[name='b']").empty();
+                $("[name=b]").parent().remove();
+
+
             })
-
         })
-
 
 
     </script>
@@ -31,7 +32,7 @@
         <div class="hleft" style="grid-area: hleft;">
             <input type="button" id="button" style="grid-area: button;" onclick="tumunuSec()" value="Tümünü Seç">
 
-            <button class=" hleftwo" style="grid-area: hleftwo;"> Sil </button>
+            <button class=" hleftwo" style="grid-area: hleftwo;" onclick="tumunuSil()">SİL</button>
         </div>
         <div class="hright" style="grid-area: hright;">
             <a href="inbox.html" class="icon" style="grid-area: hana;"><i class="fas fa-inbox"></i></a>
@@ -45,29 +46,35 @@
 
     <div class="bkutu" style="grid-area: bkutu;">
 
-        <div class="contentone" name="b" style="grid-area: contentone;">
-            <input type="checkbox" class="checkbox" style="grid-area:coneleft;">
-            <div style="grid-area: coneright;">Tebrikler! 3 Adet Whiskas Kedi Mamanız "Bornova Sevimli Patiler"
-                Barınağından yola çıktı</div>
+        <div class="contentone" name="b" style=" grid-area: contentone;">
+            <input type="checkbox" class="checkbox" style="grid-area:coneleft;"> Tebrikler! 3 Adet Whiskas Kedi
+            Mamanız "Bornova Sevimli
+            Patiler"
+            Barınağından yola çıktı
         </div>
 
-        <div class="contentwo" name="b" style="grid-area: contentwo;">
-            <input type="checkbox" class="checkbox" style="grid-area:ctwoleft;">
-            <div style="grid-area: ctworight;">"Bağrına Basan" rütbesine ulaştınız. WoofWoof ekibi olarak sizi tebrik
-                ederiz! (Ve evet. Daha önce yardım eli uzattığınız dostlarımız da sizi kutluyor! </div>
+
+
+        <div class="contentwo" name="b" style=" grid-area: contentwo;"> <input type="checkbox" class="checkbox"
+                style="grid-area:ctwoleft;">"Bağrına Basan" rütbesine ulaştınız.
+            WoofWoof ekibi olarak
+            sizi tebrik
+            ederiz! (Ve evet. Daha önce yardım eli uzattığınız dostlarımız da sizi kutluyor! </div>
+
+        <div class="contenthree" name="b" style=" grid-area: contenthree;"><input type="checkbox" class="checkbox"
+                style="grid-area:cthreeleft;">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu
+            arada bazı
+            dostlarımız da aç
+            olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz!
         </div>
 
-        <div class="contenthree" name="b" style="grid-area: contenthree;">
-            <input type="checkbox" class="checkbox" style="grid-area:cthreeleft;">
-            <div style="grid-area: cthreeright;">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada bazı
-                dostlarımız da aç
-                olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz!
-            </div>
-        </div>
+
+
 
         <div class="contentfour" name="b" style=" grid-area: contentfour;">
             <input type="checkbox" class="checkbox" style="grid-area:cfourleft;">
-            <div style="grid-area: cfouright;"> Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada bazı
+            <div class="yazı" style="grid-area: cfouright;"> Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada
+                bazı
                 dostlarımız
                 da aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz!
             </div>
@@ -75,7 +82,7 @@
 
         <div class="contentfive" name="b" style=" grid-area: contentfive;">
             <input type="checkbox" class="checkbox" style="grid-area:cfiveleft;">
-            <div style="grid-area: cfiveright;"> Pati-Shop'da %25'e varan indirimler seni
+            <div class="yazı" style="grid-area: cfiveright;"> Pati-Shop'da %25'e varan indirimler seni
                 bekliyor. Bu arada bazı dostlarımızda aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan
                 seviniriz!
             </div>
@@ -83,7 +90,7 @@
 
         <div class="contentsix" name="b" style=" grid-area: contentsix;">
             <input type="checkbox" class="checkbox" style="grid-area:csixleft;">
-            <div style="grid-area: csixright;">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada
+            <div class="yazı" style="grid-area: csixright;">Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu arada
                 bazı dostlarımızda
                 aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz!
             </div>
@@ -91,7 +98,7 @@
 
         <div class="contentsvn" name="b" style=" grid-area: contentsvn;">
             <input type="checkbox" class="checkbox" style="grid-area:csvnleft;">
-            <div style="grid-area: csvnright;"> Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu
+            <div class="yazı" style="grid-area: csvnright;"> Pati-Shop'da %25'e varan indirimler seni bekliyor. Bu
                 arada bazı dostlarımız da aç olduklarını söylüyorlar. Pati-Shop'a göz atarsan seviniriz!
             </div>
         </div>
