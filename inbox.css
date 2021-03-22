@@ -56,13 +56,15 @@ body{
     align-self: center;
     text-decoration: none;
     border: 1px solid white;
-    grid-template-rows: 50px;
+    grid-template-rows: 46px;
     text-align: center;
     width: 120px;
     align-items: center;
     transition: .4s ease-in-out;
     border-left: none;
     background-color: #0fad33;
+    color: white;
+    
 }
 
 .hleftwo:hover{
@@ -87,10 +89,10 @@ body{
     display: grid;
     width: 78.5%;
     height:100%;
-    background: whitesmoke;
-    margin: 0px 0px 0px 170px;
+   background-color: #0fad33;
+    margin: 10px 0px 0px 170px;
     align-items: center;
-    border-top: 1px solid black;
+
     grid-template-areas: "contentone"
     "contentwo"
     "contenthree"
@@ -102,14 +104,18 @@ body{
     grid-template-rows: repeat(autofill,80px);
     grid-gap: 10px;
     padding: 10px 10px;
+    opacity: 0.93;
+   
 
 }
 .contentone , .contentwo , .contenthree , .contentfour , .contentfive , .contentsix , .contentsvn{
     display: grid;
      border: 1px solid black;
      padding: 20px 20px;
-     background-color: darkgoldenrod;
+    background-color: rgba(245, 245, 245, 0.93);
+
      
+   
 
 }
 .contentone{

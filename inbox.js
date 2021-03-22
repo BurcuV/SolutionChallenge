@@ -27,28 +27,18 @@ function burcu(event) {
 }
 
 /*$(document).ready(function () {
-
     $("body").on("click", ".hleftwo", function () {
         $("name").remove();
     })
-
 })
-
 */
 /*
 $(document).ready(function () {
-
     $("hleftwo").click(function () {
         $(".contentwo").remove();
     })
-
 })
 */
-
-
-
-
-
 
 
 
