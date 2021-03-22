@@ -89,12 +89,15 @@ body{
     grid-template-columns: 50px auto 50px;
     grid-template-areas: "s-left s-center s-right";
     margin-top: 50px;
+
 }
 .slide .s-center{
     display: grid;
     background-color: green;
     color: white;
     height: 500px;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 .slide .s-center .kampanya{
     justify-self: center;
@@ -105,6 +108,8 @@ body{
 .slide .s-left, .slide .s-right{
     height: fit-content;
     margin: 5px;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
 
 }
 .slide .s-left .back:hover, .slide .s-right .next:hover{
@@ -136,6 +141,8 @@ body{
 }
 .body .col1, .body .col2{
     border: 1px solid #0fad33;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
 .body .col1{
@@ -176,6 +183,8 @@ body{
     background-color: #0fad33;
     color: white;
     border: 1px solid white;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 .body .col2{
     background-color: white;
@@ -220,6 +229,8 @@ body{
 }
 .body .col2 .tabcontent .wrapper .card:hover{
     transform: scale(1.1);
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 .body .col2 .tabcontent .wrapper .total .tablinks:hover{
     background-color: #0fad33;
