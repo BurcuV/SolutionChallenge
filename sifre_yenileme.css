@@ -1,0 +1,69 @@
+.kutu{
+    width: 500px;
+    height:auto;
+    margin: 100px auto;
+    border: 1px solid black;
+    background: whitesmoke;
+    opacity: 0.93;
+    padding-bottom: 20px;
+}
+.yazi{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+
+}
+
+.yönlendirme{
+    padding: 20px 20px;
+}
+.input input{
+    margin-left: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border: 1px solid #0fad33;
+    outline: none;
+}
+.bildiri{
+    margin-left: 25px;
+}
+.input button{
+    height: 25px;
+    background: white;
+    color: #0fad33;
+}
+.input button:hover, .yeni_sifre button:hover , .yönlendirme button:hover{
+ background: #0fad33;
+ color: white;
+}
+.yeni_sifre{
+    margin-left: 25px;
+}
+.yeni_sifre a{
+    text-decoration: none;
+    color: black;
+}
+.yeni_sifre a:hover{
+    color: #0fad33;
+    border: none;
+}
+.yeni_sifre button{
+ margin: 50px 20px 10px 200px;
+ color: #0fad33;
+ background: white;
+
+}
+.yeni_sifre input{
+    border: 1px solid #0fad33;
+    outline: none;
+}
+
+.yönlendirme button{
+    background: white;
+    color: #0fad33;
+    border: 1px solid #0fad33;
+    height: 30px;
+    border-radius: 5px 5px;
+    outline: none;
+   
+}
