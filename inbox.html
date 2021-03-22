@@ -15,12 +15,12 @@
             var checkbox = document.getElementsByClassName('checkbox');
             var selected = [];
 
-            for(var i = 0; i<checkbox.length;i++){
-                if(checkbox[i].checked == true){
+            for (var i = 0; i < checkbox.length; i++) {
+                if (checkbox[i].checked == true) {
                     selected.push(checkbox[i]);
                 }
             }
-            for(var i = 0; i<selected.length; i++){
+            for (var i = 0; i < selected.length; i++) {
                 selected[i].parentNode.style.display = 'none';
             }
         }
