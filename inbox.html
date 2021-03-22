@@ -11,16 +11,19 @@
     <title>Bildirimler</title>
     <script src="jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
+        function sil() {
+            var checkbox = document.getElementsByClassName('checkbox');
+            var selected = [];
 
-            $(".hleftwo").click(function () {
-                $("[name=b]").parent().remove();
-
-
-            })
-        })
-
-
+            for(var i = 0; i<checkbox.length;i++){
+                if(checkbox[i].checked == true){
+                    selected.push(checkbox[i]);
+                }
+            }
+            for(var i = 0; i<selected.length; i++){
+                selected[i].parentNode.style.display = 'none';
+            }
+        }
     </script>
 
 
@@ -31,8 +34,7 @@
         <img src="resimler/logo.png" class="logo" style="grid-area: logo; height: 50px;">
         <div class="hleft" style="grid-area: hleft;">
             <input type="button" id="button" style="grid-area: button;" onclick="tumunuSec()" value="Tümünü Seç">
-
-            <button class=" hleftwo" style="grid-area: hleftwo;" onclick="tumunuSil()">SİL</button>
+            <button class=" hleftwo" style="grid-area: hleftwo;" onclick="sil()"> Sil </button>
         </div>
         <div class="hright" style="grid-area: hright;">
             <a href="inbox.html" class="icon" style="grid-area: hana;"><i class="fas fa-inbox"></i></a>
