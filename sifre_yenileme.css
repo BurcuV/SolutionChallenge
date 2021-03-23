@@ -1,7 +1,7 @@
 .kutu{
     width: 500px;
     height:auto;
-    margin: 100px auto;
+    margin: 40px auto;
     border: 1px solid black;
     background: whitesmoke;
     opacity: 0.93;
@@ -11,6 +11,7 @@
     text-align: center;
     padding-top: 20px;
     font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -26,15 +27,18 @@
 }
 .bildiri{
     margin-left: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .input button{
     height: 25px;
     background: white;
     color: #0fad33;
+    border: 1px solid #0fad33;
 }
 .input button:hover, .yeni_sifre button:hover , .yönlendirme button:hover{
  background: #0fad33;
  color: white;
+ border: 1px solid #0fad33;
 }
 .yeni_sifre{
     margin-left: 25px;
@@ -51,6 +55,7 @@
  margin: 50px 20px 10px 200px;
  color: #0fad33;
  background: white;
+border: 1px solid #0fad33;
 
 }
 .yeni_sifre input{
