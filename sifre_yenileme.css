@@ -6,6 +6,8 @@
     background: whitesmoke;
     opacity: 0.93;
     padding-bottom: 20px;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 .yazi{
     text-align: center;
@@ -34,28 +36,44 @@
     background: white;
     color: #0fad33;
     border: 1px solid #0fad33;
+    transition: .4s ease-in-out;
 }
-.input button:hover, .yeni_sifre button:hover , .yönlendirme button:hover{
+.input button:hover, .yönlendirme button:hover{
  background: #0fad33;
  color: white;
  border: 1px solid #0fad33;
+ cursor: pointer;
 }
 .yeni_sifre{
     margin-left: 25px;
 }
 .yeni_sifre a{
     text-decoration: none;
-    color: black;
+    color: #0fad33;
+    border: 1px solid #0fad33;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
 }
 .yeni_sifre a:hover{
-    color: #0fad33;
+    color: white;
     border: none;
+    background-color: #0fad33;
+    transform: scale(1.05);
 }
 .yeni_sifre button{
  margin: 50px 20px 10px 200px;
- color: #0fad33;
- background: white;
+ color: white;
+ background: #0fad33;
+ border-radius: 5px;
+ transition: .4s ease-in-out;
 border: 1px solid #0fad33;
+padding: 10px;
+
+}
+.yeni_sifre button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 
 }
 .yeni_sifre input{
@@ -70,5 +88,6 @@ border: 1px solid #0fad33;
     height: 30px;
     border-radius: 5px 5px;
     outline: none;
+    transition: .4s ease-in-out;
    
 }
