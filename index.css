@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+*{
+    margin: 0 0 0 0;
+    font-family: 'PT Sans', sans-serif;
+}
+video{
+    position: fixed;
+    z-index: -1;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+.body{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: "left .";
+    height: 100%;
+    background: url();
+}
+.body .left{
+    background-color: rgba(15,173,51,0.5);
+    height: 100%;
+    padding: 20px;
+    box-shadow: 20px 0px 30px 0px rgba(0,0,0,0.5);
+    display: inherit;
+    justify-items: center;
+    color: white;
+
+}
+.body .left .login{
+    background-color: white;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.body .left .login:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.body .left .register{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+    transition: .4s ease-in-out;
+}
+.body .left .register:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    background-color: white;
+    color: #0fad33;
+}
+.body .left .register:hover a{
+    color: #0fad33 !important;
+}
