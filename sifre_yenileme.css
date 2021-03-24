@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+*{
+  font-family:'PT Sans', sans-serif;
+}
+
+
 body{
      background-attachment: fixed;
           background-size: 100%;
@@ -6,78 +12,129 @@ body{
 
 
 .kutu{
-    width: 500px;
-    height:auto;
-    margin: 40px auto;
-    border: 1px solid #0fad33;
-    background: whitesmoke;
+    display: grid;
+    width: 50%;
+    height: 100vh;
     opacity: 0.93;
-    padding-bottom: 20px;
-    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px;
-    border-radius: 5px 5px;
+    background: whitesmoke;
+    grid-template-areas: "yazi"
+    "btn"
+    "bildiri"
+    "input"
+    "yeni_sifre"
+    "giris"
+    
+    ;
+    margin: 50px auto;
+    grid-template-rows: 10% 20% 10% 10% 20% 10% 10%;
+    grid-gap: 4%;
+    padding: 2% 2%;
+    outline: none;
+ }
+
+.yazi ,  .btn, .input , .yeni_sifre , .giris {
+ display: grid;
+ 
+ 
 }
 .yazi{
     text-align: center;
-    padding-top: 20px;
-    font-size: 18px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  font-weight: 700;
+  
 }
-
-.yönlendirme{
-    padding: 20px 20px;
+.btn{
+    grid-template-areas: "btn1"
+    "btn2";
+   grid-gap: 10%;
+   
 }
-.input input{
-    margin-left: 20px;
-    height: 20px;
-    margin-right: 20px;
-    border: 1px solid #0fad33;
-    outline: none;
+.btn1 , .btn2{
+    background:white;
+   color: #0fad33;
+   border: 1px solid #0fad33;
+   border-radius: 5px;
+   transition: .4s ease-in-out;
+}
+.btn1:hover , .btn2:hover , .buton:hover{
+    background: #0fad33;
+    color: white;
 }
 .bildiri{
-    margin-left: 25px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    display: none;
+    text-align: left;
+   
+    align-items: end;
+    
 }
-.input button{
-    height: 25px;
+.input{
+    grid-template-areas: "metin buton";
+    grid-gap: 20px;
+}
+.metin{
+    display: grid;
+    border: 1px solid #0fad33;
+     border-radius: 5px;
+}
+.buton{
+    display: grid;
     background: white;
-    color: #0fad33;
+    color:#0fad33;
+    align-items: center;
+    border: 1px solid #0fad33;
+    border-radius: 5px;
+}
+
+.yeni_sifre{
+    
+    grid-template-areas: "label pinput" 
+    "labell pinputt";
+    grid-template-columns: 25% 75%;
+    grid-row-gap: 10px;
+    
+}
+.yeni_sifre label{
+text-align: center;
+
+align-self: center;
+}
+.pinput{
+    display: grid;
     border: 1px solid #0fad33;
 }
-.input button:hover, .yeni_sifre button:hover , .yönlendirme button:hover{
+
+.giris {
+    
+    grid-template-areas: "kaydet login";
+    transition: .4s ease-out;
+    column-gap: 10px;
+   
+    
+}
+
+.kaydet{
+    background: #0fad33;
+    color: white;
+    transition: .4s ease-out;
+    border-radius: 5px;
+    
+}
+.kaydet:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+.giris a{
+    display: grid;
+ text-decoration: none;
+    color: #0fad33;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #0fad33;
+    border-radius: 5px;
+}
+.giris a:hover{
  background: #0fad33;
  color: white;
- border: 1px solid #0fad33;
-}
-.yeni_sifre{
-    margin-left: 25px;
-}
-.yeni_sifre a{
-    text-decoration: none;
-    color: black;
-}
-.yeni_sifre a:hover{
-    color: #0fad33;
-    border: none;
-}
-.yeni_sifre button{
- margin: 50px 20px 10px 200px;
- color: #0fad33;
- background: white;
-border: 1px solid #0fad33;
-
-}
-.yeni_sifre input{
-    border: 1px solid #0fad33;
-    outline: none;
-}
-
-.yönlendirme button{
-    background: white;
-    color: #0fad33;
-    border: 1px solid #0fad33;
-    height: 30px;
-    border-radius: 5px 5px;
-    outline: none;
-   
+ 
 }

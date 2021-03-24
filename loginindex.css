@@ -5,7 +5,10 @@
     margin-top: 0;
     font-family: 'PT Sans', sans-serif;
 }
-
+body{
+    background-attachment: fixed;
+          background-size: 100%;
+}
 .header{
     display: grid;
     grid-template-columns: 10% auto 300px;

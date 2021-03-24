@@ -105,6 +105,7 @@ body{
     grid-gap: 10px;
     padding: 10px 10px;
     opacity: 0.93;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px;
    
 
 }

@@ -7,35 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" a href="sifre_yenileme.css">
     <title>Document</title>
+
 </head>
 
 <body background="1.png">
-    <div class="kutu">
-        <br>
-        <div class="yazi"> Şifreni mi Unuttun? Sorun değil, Hadi hemen halledelim..</div><br> <br>
-        <div class="yönlendirme">
-            <button>Yenileme kodumu mailime gönder.</button> <br> <br>
-            <button>Yenileme kodumu telefonuma gönder.</button>
+    <div class="kutu" style="grid-area: kutu;">
+
+        <div class="yazi" style="grid-area: yazi;">
+            <p>Şifreni mi unuttun? Sorun değil,Hadi hemen halledelim.. </p>
+        </div>
+        <div class="btn" style="grid-area: btn;">
+            <button class="btn1" style="grid-area: btn1;" onclick="yazi()">Yenileme kodunu mailime gönder</button>
+            <button class="btn2" style="grid-area: btn2;" onclick="yazi()"> Yenileme kodunu mailime gönder</button>
+        </div>
+        <div class="bildiri" id="bildiri" style="grid-area: bildiri;">
+            <p>Sevgili dostum senin için bir kod gönderdim.</p>
+        </div>
+        <div class="input" style="grid-area: input;">
+            <input type="text" placeholder="Kodu gir" class="metin" style="grid-area: metin;">
+            <button class="buton" onclick="alert('Şifre girebilirsiniz')" style="grid-area:buton;">Kodu Gönder</button>
         </div>
 
-        <br> <br>
-
-        <div class="bildiri">Sevgili dostum senin için bir kod gönderdim.</div> <br>
-        <div class="input"> <input type="text" placeholder="Kodu gir"> <button
-                onclick="alert('Şifre girebilirsiniz')">Kodu
-                Gönder</button>
-        </div> <br> <br>
-        <br> <br>
-
-        <div class="yeni_sifre">
-            Yeni Şifre: <input type="password"> <br> <br>
-
-            Yeni Şifre: <input type="password"> <br>
-
-            <button> Kaydet </button>
-            <a href="login.html"> Yeni Şifrenle Giriş Yap</a>
+        <div class="yeni_sifre" style="grid-area: yeni_sifre">
+            <label for="input" style="grid-area: label;">Yeni Şifre:</label> <input type="password" name="input"
+                class="pinput" style="grid-area: pinput; ">
+            <label for="input" style="grid-area: labell;">Yeni Şifre:</label> <input type="password" name="input"
+                class="pinput" style="grid-area: pinputt;">
 
         </div>
+        <div class="giris" style="grid-area: giris;">
+            <button class="kaydet" style="grid-area: kaydet; height: 100%;"> Kaydet </button>
+            <a href="login.html" class="login" style="grid-area: login; height: 100%;"> Yeni Şifrenle Giriş Yap</a>
+        </div>
+    </div>
+    <script>
+        function yazi() {
+            var a = document.getElementById("bildiri");
+            a.style.display = "grid";
+
+        }
+
+
+    </script>
 </body>
 
 </html>
