@@ -17,6 +17,8 @@ body{
     grid-template-areas: "logo . items";
     background-color: #0fad33;
     align-items: center;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 
     
 }
@@ -158,20 +160,33 @@ body{
     grid-gap: 5px;
 }
 .input{
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 10px;
     background-color: rgba(245, 245, 245, 0.93);
     border: 1px solid #0fad33;
     outline: none;
+    transition: .4s ease-in-out;
+}
+.input::placeholder{
+    color: #0fad33;
 }
 
 .input:focus{
     background-color: #0fad33;
     color: white;
     border: 1px solid white;
+
     
 }
-
+.input:focus::placeholder{
+    color: white;
+}
+select{
+    color: #0fad33;
+}
+select:focus{
+    color: white;
+}
 
 .btn{
     padding: 15px;
@@ -201,6 +216,8 @@ body{
     background-color: #0fad33;
     color: white;
     cursor: pointer;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 
 }
 /* Animasyonlar */

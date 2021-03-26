@@ -12,6 +12,7 @@ body{
     background-image: url('1.png');
 }
 .header{
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     display: grid;
     grid-template-columns: 10% auto 300px;
     grid-template-rows: 50px;
@@ -98,6 +99,7 @@ body{
     color: white;
     height: 500px;
     box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 2px solid #0fad33;
 
 }
 .slide .s-center .kampanya{
@@ -143,15 +145,19 @@ body{
 .body .col1, .body .col2{
     border: 1px solid #0fad33;
     box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: grid;
+    border-radius: 15px;
+    opacity: 0.93;
+
 
 }
 
 .body .col1{
     background-color: white;
-    display: grid;
+    opacity: 0.93;
     grid-template-columns: repeat(1,100%);
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     height: fit-content;
     margin-left: 10px;
     
@@ -166,6 +172,7 @@ body{
     margin: 0;
     padding: 10px;
 }
+
  .tablinks{
     width: 100%;
     margin: 0;
@@ -196,7 +203,7 @@ body{
 
 .tabcontent{
         display: none;
-        width: fit-content;
+        width: 100%;
 }
 .body .col2 .tabcontent .wrapper{
     display: grid;
@@ -237,6 +244,17 @@ body{
     background-color: #0fad33;
     color: white;
     border: 1px solid white;
+}
+.body .col2 .tabcontent .paidwrapper{
+    width: 100%;
+    display: none;
+    justify-content: center!important;
+    
+    grid-template-rows: 
+        "."
+        "ico"
+        "success"
+    ;
 }
 
 @keyframes fade{
