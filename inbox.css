@@ -61,11 +61,12 @@ body{
     border: 1px solid white;
     grid-template-rows: 50px;
     text-align: center;
-    width: 120px;
+    width: 100%;
     align-items: center;
     transition: .4s ease-in-out;
     border-left: none;
     background-color: #0fad33;
+    height: 100%;
 }
 
 .hleftwo:hover{
@@ -91,7 +92,7 @@ body{
     width: 78.5%;
     height:100%;
     background: whitesmoke;
-    margin: 0px 0px 0px 170px;
+    margin: 20px 0px 0px 170px;
     align-items: center;
     border-top: 1px solid black;
     grid-template-areas: "contentone"
@@ -114,7 +115,7 @@ body{
     display: grid;
      border: 1px solid black;
      padding: 20px 20px;
-     background-color: darkgoldenrod;
+     background-color: #0fad33;
      
 
 }
