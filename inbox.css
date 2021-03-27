@@ -104,12 +104,9 @@ body{
     grid-template-rows: repeat(autofill,80px);
     grid-gap: 10px;
     padding: 10px 10px;
-<<<<<<< HEAD
     opacity: 0.93;
     box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px;
    
-=======
->>>>>>> 84aaa873bcfef26b26908e5e55a0f00a10a73d64
 
 }
 .contentone , .contentwo , .contenthree , .contentfour , .contentfive , .contentsix , .contentsvn{
