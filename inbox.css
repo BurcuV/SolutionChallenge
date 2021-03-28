@@ -46,32 +46,33 @@ body{
  background: transparent;
  border: none;
  transition: .4s ease-in-out;
- border: 1px solid white;
  color: white;
  width: 120px;
 }
 #button:hover{
     color: green;
     background-color: white;
+    cursor: pointer;
 }
 .hleftwo {
+    color: white;
     display: grid;
     align-self: center;
     text-decoration: none;
-    border: 1px solid white;
     grid-template-rows: 50px;
     text-align: center;
     width: 100%;
     align-items: center;
     transition: .4s ease-in-out;
-    border-left: none;
     background-color: #0fad33;
     height: 100%;
+    border: none;
 }
 
 .hleftwo:hover{
     color: green;
      background: white;
+     cursor: pointer;
 }
 .hright  {
     display: grid;
@@ -87,7 +88,7 @@ body{
  color: white;
 }
 .bkutu{
-    
+    color: white;
     display: grid;
     width: 78.5%;
     height:100%;
@@ -107,7 +108,7 @@ body{
     grid-gap: 10px;
     padding: 10px 10px;
     opacity: 0.93;
-    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px;
+    box-shadow: rgba(44, 10, 10, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
    
 
 }
